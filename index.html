@@ -52,56 +52,44 @@
 
         <!-- Left Column -->
         <div class="w3-third">
-            <style>
-                .container {
-                  position: relative;
-                  width: 50%;
-                }
-                
-                .image {
-                  display: block;
-                  width: 100%;
-                  height: auto;
-                }
-                
-                .overlay {
-                  position: absolute;
-                  bottom: 0;
-                  left: 100%;
-                  right: 0;
-                  background-color: #008CBA;
-                  overflow: hidden;
-                  width: 0;
-                  height: 100%;
-                  transition: .5s ease;
-                }
-                
-                .container:hover .overlay {
-                  width: 100%;
-                  left: 0;
-                }
-                
-                .text {
-                  color: white;
-                  font-size: 20px;
-                  position: absolute;
-                  top: 50%;
-                  left: 50%;
-                  -webkit-transform: translate(-50%, -50%);
-                  -ms-transform: translate(-50%, -50%);
-                  transform: translate(-50%, -50%);
-                  white-space: nowrap;
-                }
-                </style>
+
+          <div class="container">
+            <div class="w3-white w3-text-grey w3-card-4">
+              <div class="w3-display-container">
+               
+
+          <style>
+            .mySlides {display:none;}
+            </style>
+            </head>
+            
+            <body>
+            
+            <div class="w3-content w3-section" style="max-width:500px">
+              <img class="mySlides" src="afg-flag.jfif" style="width:100%" alt="avatar">
+              <img class="mySlides" src="myphoto.jpg" style="width:100%">
+              <img class="mySlides" src=".png" style="width:100%">
+            </div>
+            
+            <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+            </script>
                 </head>
 
-            <div class="container">
-          <div class="w3-white w3-text-grey w3-card-4">
-            <div class="w3-display-container">
-              <img src="afg-flag.jfif" style="width:100%" alt="Avatar">
-              <div class="overlay">
-                  <div class="text">Hello Dears</div>
-              </div>
+             
 
                           </div>
                       </div>
